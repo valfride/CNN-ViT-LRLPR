@@ -15,9 +15,9 @@ implied by the root source LICENSE;contact the maintainers regarding additional
 reuse rights. Dataset images/annotations remain separately restricted.
 
 The approved asset is to be attached to a GitHub Release,never committed to Git.
-Publication requires a streamed upload hash/size check and an independent download
-of the actual release asset with the same SHA-256 and size. Until those checks pass,
-this staging document does not claim a public release/download exists.
+The uploaded GitHub asset was independently downloaded and verified at the
+exact SHA-256/size above. [Release](https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0);
+[checkpoint download](https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth). Only this model binary is attached.
 
 No baseline checkpoints,primary/student states,other seeds,or ablation checkpoints
 are approved for distribution here. Their identities remain in the scientific

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "PRIVATE_STAGING_SINGLE_ORIGINAL_EMA_ONLY",
+  "status": "SINGLE_ORIGINAL_EMA_ONLY",
   "source_candidate_base": "b121869b222477f3a9384c2fd80b79baa403d854",
-  "public_url": null,
-  "artifact_release_published": false,
+  "public_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0",
+  "artifact_release_published": true,
   "deserialization_in_this_phase": false,
   "proposed_packages": {
     "inference-eight-models": {
@@ -34,7 +34,7 @@
       "weight_source": null,
       "package": "inference-eight-models",
       "proposed_artifact_path": "inference/ours/last.pth",
-      "download_url": null,
+      "download_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth",
       "controlled_storage": {
         "status": "PASS",
         "sha256_verified": true,
@@ -48,7 +48,7 @@
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": true,
-      "release_gate": "Upload and independent release download verification pending"
+      "release_gate": "Uploaded asset digest/size independently verified;only this state released"
     },
     {
       "id": "mdiff4str",

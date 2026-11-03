@@ -36,10 +36,14 @@ paper-evaluation filename is `last.pth`. They identify the same immutable bytes:
 - Size: **64,267,208 bytes**
 - Configuration: [original CE snapshot](experiments/revision_eval/submitted_model/config_snapshot.yaml)
 
-The release upload/public-download verification is pending. No download URL is
-advertised until those checks pass. [Weight access and mapping](docs/MODEL_WEIGHTS.md)
-distinguish distribution authorization from the source-code license.
+[Download the original EMA checkpoint](https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth) from the
+[single-model release](https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0). The uploaded asset was independently downloaded
+and verified against the exact digest and byte size above.
+[Weight access and mapping](docs/MODEL_WEIGHTS.md) distinguish distribution
+authorization from the source-code license.
 
+The example below passed strict loading/native decoding with finite `[1,7,38]`
+CPU FP32 scores using the original EMA. All32CPU regression tests pass.
 After obtaining the original file, verify it locally and run a bounded synthetic
 single-image example. CPU FP32 is explicit here; this does not reproduce CUDA FP16
 paper metrics. The checkpoint remains outside the checkout:

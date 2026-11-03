@@ -27,3 +27,13 @@ Full training cannot be claimed to replay the missing historical predecessor/RNG
 ## Private release preparation
 
 The [reader workflow](READER_START_HERE.md), complete file/component provenance ledger,26-entry checkpoint release manifest and67-distribution observed dependency constraints/license metadata are prepared. The history-free private staging profile excludes five unused historical utilities/copies and five private decision reports;150text files remain. Original science/configs/checkpoints and the GPU-tested helper hashes are unchanged. Controlled reader imports pass with GPUs hidden; clean independent installation remains unverified. Source/weight/data rights,final source license/NOTICE,repository identity and final author-approved paper commit remain publication gates. No public repository,merge,artifact publication or additional GPU experiment was performed.
+
+## Clean public distribution scope
+
+This repository is an independent clean-history import. Original contributions
+are Apache-2.0 with retained third-party notices. Only the original CNN–ViT EMA58
+is distributed;see [MODEL_WEIGHTS.md](MODEL_WEIGHTS.md). The added single-state
+CPU inference example passed strict loading/native decoding and32CPU tests.
+No original experiments or full GPU campaign were repeated. Historical preparation
+notes above describe earlier private work;they do not promise unavailable model
+packages or describe the current clean repository as the original research repo.
