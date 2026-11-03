@@ -1,6 +1,6 @@
 # Reproducing the final OJITS manuscript
 
-This private, unmerged source candidate maps the previously reviewed paper snapshot `b0b0e94` to original artifacts. It is not assumed to be the latest paper commit. Manuscript revisions are in progress; final alignment review is pending the new commit, while the established scientific protocol remains fixed. A bounded synthetic checkpoint-loading/inference campaign is documented in [GPU_SMOKE_VALIDATION.md](GPU_SMOKE_VALIDATION.md); no training, full-cohort evaluation or efficiency benchmark was performed. Plans and aggregate verification use only the standard library.
+This clean-history companion preserves the original protocol mapped from the previously reviewed paper snapshot `b0b0e94` to original artifacts. It is not assumed to be the latest paper commit. Manuscript revisions are in progress; final alignment review is pending the new commit, while the established scientific protocol remains fixed. A bounded synthetic checkpoint-loading/inference campaign is documented in [GPU_SMOKE_VALIDATION.md](GPU_SMOKE_VALIDATION.md); no training, full-cohort evaluation or efficiency benchmark was performed. Plans and aggregate verification use only the standard library.
 
 ## Environment
 
@@ -16,7 +16,7 @@ Use a fresh Python3.9.21 environment. Clean installation remains unverified. Pre
 
 ## Inputs and outputs
 
-`paper_manifest.json` pins eight checkpoint/config identities and exact test/validation/LPLCv2 file hashes. `ablation_manifest.json` pins18 selected Table5 files, their config hashes and original per-seed aggregate counts; hashes were calculated read-only on original controlled host files. No weights are included. The private path map uses keys from `weights.example.json`; relative paths resolve beside that JSON. Input paths can refer to existing files. The runner verifies hashes and stages one symlink under the original filename; it never reselects a checkpoint.
+`paper_manifest.json` pins eight checkpoint/config identities and exact test/validation/LPLCv2 file hashes. `ablation_manifest.json` pins18 selected Table5 files, their config hashes and original per-seed aggregate counts; hashes were calculated read-only on original controlled host files. No weights are Git-tracked;only the original proposed EMA58is distributed as a [separate release asset](MODEL_WEIGHTS.md). The private path map uses keys from `weights.example.json`; relative paths resolve beside that JSON. Input paths can refer to existing files. The runner verifies hashes and stages one symlink under the original filename; it never reselects a checkpoint.
 
 Preflight streams hashes without deserializing model or dataset files. Exact LPLCv2 metadata/data/selection/dataset-info bytes are required; byte-different reconstruction needs a separately reviewed identity process. Use only trusted, approved originals: the scientifically preserved evaluator uses checkpoint deserialization during explicitly requested execution after hashes pass. The source/config/reference fingerprint ledger rejects unreviewed changes.
 
@@ -43,4 +43,4 @@ This is consistent with second rounding of the archived display, not a changed e
 
 Other limits: no full-cohort reproduction or clean-environment reader run; original CE run snapshot9db50ded… and epoch58checkpoint1a7a640d… are preserved, but its predecessor, exact May code and stochastic continuation remain incomplete. It completed 127 epochs and logged a partial 128; this is not proven early-stop termination. Generic legacy selector ties differ, so paper commands use manifest pins. LISTER stays113,SVTRv2 stays156. IGTR's recorded device-dependent historical F1 caveat remains; mismatches are reported without adjusting selections or results.
 
-Permissions, final licensing/coauthor approval and existing restricted Git history remain release gates. This candidate tree does not sanitize other branches or PR refs. **X3 remains deferred**, with no related investigation, flag change or manuscript edit in this implementation phase.
+Original contributions are Apache-2.0 with retained third-party terms. Only the original proposed EMA58has distribution authorization here;additional states and dataset access remain separate. The research repository and its restricted history remain private and are not ancestors of this clean repository. **X3 remains deferred**, with no related investigation, flag change or manuscript edit in this implementation phase.

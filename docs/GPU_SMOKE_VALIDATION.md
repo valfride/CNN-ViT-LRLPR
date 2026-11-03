@@ -1,5 +1,9 @@
 # GPU compatibility validation — 3 November 2026
 
+Historical validation record:references to a private repository/branch describe
+the controlled research campaign at that time,not this independent clean release.
+Current distribution is documented in [MODEL_WEIGHTS.md](MODEL_WEIGHTS.md).
+
 **PASS: eight original recognizers and six seed-42 ablation entries.** Thirteen distinct checkpoint workers completed; the identical full seed-42 EMA/configuration reused the CNN–ViT evidence. All available requested assets were found and hash-verified. No unresolved execution blocker remains for this bounded smoke scope.
 
 This report concerns synthetic execution compatibility, not independent reproduction of the numerical paper tables. The machine-readable [sanitized summary](../reproducibility/reference/GPU_SMOKE_COMPATIBILITY.json) includes full checkpoint/configuration SHA-256 identities and actual tensor shapes/dtypes. Private raw logs and local artifact paths are excluded from Git.
