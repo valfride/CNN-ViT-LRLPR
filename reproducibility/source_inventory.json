@@ -1,0 +1,265 @@
+{
+  "base": "c739714a233ad6a66f43cffceb5d30320d0489ae",
+  "measured_revision": "a0f98444f02b8369f58b6154f2d1601c3673396b",
+  "transferred_source_files": [
+    "test.py",
+    "checkpoint_selection.py",
+    "checkpoint_state_compatibility.py",
+    "temporal_votes.py",
+    "models/__init__.py",
+    "models/custom/VSR_curvature_att.py",
+    "models/svtrv2/svtrv2_ar_bridge.py",
+    "train_funcs/train_utils.py",
+    "train_gan.py",
+    "baselines_configs/SVTRV2_AR_BASELINE.yaml",
+    "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+    "experiments/revision_eval/shared/scripts/run_eval_matrix.py",
+    "experiments/revision_eval/shared/scripts/audit_frame_order.py",
+    "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_efficiency.py",
+    "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_one.py",
+    "experiments/revision_eval/reviewer1/02_cross_dataset/scripts/build_lplcv2_acquisition_pair.py",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed123.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed42.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed123.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed123.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed2026.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed42.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed123.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed2026.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed42.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed42.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed2026.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed2026.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed123.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed2026.yaml",
+    "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed42.yaml",
+    "experiments/revision_eval/reviewer1/02_cross_dataset/scripts/audit_lplcv2_full_cohort_geometry.py"
+  ],
+  "excluded": "All per-sample results, logs, caches, bytecode, crops, model binaries and private locks",
+  "transfers": [
+    {
+      "path": "test.py",
+      "original_sha256": "5581d8f4cf848521dd1a2b9703ed1891c1fb0d86e143d492877c1130f3e1f60a",
+      "candidate_sha256": "faae9b25e1c410bb959ea5de17e1e19a4acedec4cc26ec624db510e3dd4aa463",
+      "identical": false,
+      "change": "Mechanical extraction of original native inference/forward body for shared smoke execution; frozen canonical AST parity checked in reproducibility/test_smoke.py. No scientific arithmetic or decoder change."
+    },
+    {
+      "path": "checkpoint_selection.py",
+      "original_sha256": "ea115ad704568750373e0e7c0ff9732d553efbc0c408883a911476109202579b",
+      "candidate_sha256": "ea115ad704568750373e0e7c0ff9732d553efbc0c408883a911476109202579b",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "checkpoint_state_compatibility.py",
+      "original_sha256": "f35607da0b479d085452006f06becc055f87c67f23055bb9b4c6035f0f4d5f98",
+      "candidate_sha256": "f35607da0b479d085452006f06becc055f87c67f23055bb9b4c6035f0f4d5f98",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "temporal_votes.py",
+      "original_sha256": "5f434976b4d0c928580212460a2870e112c4ca92e6cd963d88a6bf2e2ad5a303",
+      "candidate_sha256": "5f434976b4d0c928580212460a2870e112c4ca92e6cd963d88a6bf2e2ad5a303",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "models/__init__.py",
+      "original_sha256": "823f15adfceb17eda76fb83f97f6ac4a4d25a1cf566dbd9d9e80f73ea1d6c30e",
+      "candidate_sha256": "823f15adfceb17eda76fb83f97f6ac4a4d25a1cf566dbd9d9e80f73ea1d6c30e",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "models/custom/VSR_curvature_att.py",
+      "original_sha256": "65570f13e4ef4a987e602cb3318b62cb5b5ce176cfc73bd65fcef7d46093f7db",
+      "candidate_sha256": "7c8b38738d47926e7ac931586d553522fe2805806da30e0528a7c276294230ac",
+      "identical": false,
+      "change": " Prominent provenance/modification comment added for clean publication;executable AST unchanged."
+    },
+    {
+      "path": "models/svtrv2/svtrv2_ar_bridge.py",
+      "original_sha256": "c37fb9318dc4a81dda7913770815230a605c3dd2d20ee25dcb8df33434064e48",
+      "candidate_sha256": "31f58436556b7b3f5cadaec9039d8ff7856f31f4077004f9185d92918baa376f",
+      "identical": false,
+      "change": " Prominent provenance/modification comment added for clean publication;executable AST unchanged."
+    },
+    {
+      "path": "train_funcs/train_utils.py",
+      "original_sha256": "acb45a8b6d0fd37ae000cdfd8d0c82ba9ec591673d9f1ce47f8ecb7a1e9aa452",
+      "candidate_sha256": "acb45a8b6d0fd37ae000cdfd8d0c82ba9ec591673d9f1ce47f8ecb7a1e9aa452",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "train_gan.py",
+      "original_sha256": "011891985de4902c8b2b26ea994385ff0c16d17f28fe153e199e112797d12556",
+      "candidate_sha256": "011891985de4902c8b2b26ea994385ff0c16d17f28fe153e199e112797d12556",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "baselines_configs/SVTRV2_AR_BASELINE.yaml",
+      "original_sha256": "f8c656f5486018553c88746678de842d7dd5ff3ebb30f1697ad48a3e8dc0a31f",
+      "candidate_sha256": "f8c656f5486018553c88746678de842d7dd5ff3ebb30f1697ad48a3e8dc0a31f",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "original_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "candidate_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/shared/scripts/run_eval_matrix.py",
+      "original_sha256": "55509506366e452e7e1e57701f0d85126c9d975b91e9301e169f124351c85537",
+      "candidate_sha256": "55509506366e452e7e1e57701f0d85126c9d975b91e9301e169f124351c85537",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/shared/scripts/audit_frame_order.py",
+      "original_sha256": "1576ea6ef6d0333678771da7fedb0d64190c53a8f2386bf6c840e1bbebf07cc1",
+      "candidate_sha256": "1576ea6ef6d0333678771da7fedb0d64190c53a8f2386bf6c840e1bbebf07cc1",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_efficiency.py",
+      "original_sha256": "c9e1d962abdc9118e29910fa70cd046fc346f2b2968652ecbfbdedbf937f543e",
+      "candidate_sha256": "a4b9039ec85028cfacdb3165c0de12dbf2f6a71f32ce9c31d21b188fb92f5962",
+      "identical": false,
+      "change": "Require explicit dataset/output paths; benchmark scientific formulas unchanged"
+    },
+    {
+      "path": "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_one.py",
+      "original_sha256": "88f16ce193f3d8df92e2bd145d71540bcbc9e153fd2215b0ee81500093f851f4",
+      "candidate_sha256": "f600b549285421dce2dbd92774b06e142f98acbc864f8b463c1a83b03b3f8999",
+      "identical": false,
+      "change": "Mechanical extraction of original native inference/forward body for shared smoke execution; frozen canonical AST parity checked in reproducibility/test_smoke.py. No scientific arithmetic or decoder change."
+    },
+    {
+      "path": "experiments/revision_eval/reviewer1/02_cross_dataset/scripts/build_lplcv2_acquisition_pair.py",
+      "original_sha256": "957774019c84105f07cf4b206a677f347ab74b6544db3962fbc2564850f3516e",
+      "candidate_sha256": "957774019c84105f07cf4b206a677f347ab74b6544db3962fbc2564850f3516e",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed123.yaml",
+      "original_sha256": "b97d8824564b56574305c89a6aa02e6a3bd45e2fe1287ce2de82b09c89736cf1",
+      "candidate_sha256": "b97d8824564b56574305c89a6aa02e6a3bd45e2fe1287ce2de82b09c89736cf1",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed42.yaml",
+      "original_sha256": "5361feb843fad8a0549f806279ddc0fb58cdae754e5b8440c05fbfbd0cae5227",
+      "candidate_sha256": "5361feb843fad8a0549f806279ddc0fb58cdae754e5b8440c05fbfbd0cae5227",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed123.yaml",
+      "original_sha256": "ccbc7560ad72689eb12115ec58543165ae866f08de6df1785f582536f667734a",
+      "candidate_sha256": "ccbc7560ad72689eb12115ec58543165ae866f08de6df1785f582536f667734a",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed123.yaml",
+      "original_sha256": "cb8a35b10ef65e677f91bd1421f366dcd48f2e5a036f34115eaa1266eb60e88d",
+      "candidate_sha256": "cb8a35b10ef65e677f91bd1421f366dcd48f2e5a036f34115eaa1266eb60e88d",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed2026.yaml",
+      "original_sha256": "87fe0cf42d08fa77810d33034850054e6e92f62ab733ef4ea402f019486e7aac",
+      "candidate_sha256": "87fe0cf42d08fa77810d33034850054e6e92f62ab733ef4ea402f019486e7aac",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed42.yaml",
+      "original_sha256": "91cc9857dae70bd142cc6dd9da8c98cee34b1fd64085d8572835e7a994d02b40",
+      "candidate_sha256": "91cc9857dae70bd142cc6dd9da8c98cee34b1fd64085d8572835e7a994d02b40",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed123.yaml",
+      "original_sha256": "0873a0d47b23b6f39c5ecc805ac92caada25b0500459289b69675bd23ecbba4d",
+      "candidate_sha256": "0873a0d47b23b6f39c5ecc805ac92caada25b0500459289b69675bd23ecbba4d",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed2026.yaml",
+      "original_sha256": "29ffc70478835b0605d4e9cad2c994dbf4a6cbb8bc2f72d703a07b5a607c52c9",
+      "candidate_sha256": "29ffc70478835b0605d4e9cad2c994dbf4a6cbb8bc2f72d703a07b5a607c52c9",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed42.yaml",
+      "original_sha256": "4b75c9d6a410451fde61cdf349f30c5970e3088d71f827c92c9ccf8cd5b44d0f",
+      "candidate_sha256": "4b75c9d6a410451fde61cdf349f30c5970e3088d71f827c92c9ccf8cd5b44d0f",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed42.yaml",
+      "original_sha256": "11e31246a53d65e64c795f0cc6f3d81a189f68c9b8f8103e1d20048fb496972f",
+      "candidate_sha256": "11e31246a53d65e64c795f0cc6f3d81a189f68c9b8f8103e1d20048fb496972f",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed2026.yaml",
+      "original_sha256": "86bb1ce14427fc6dde63e641092703e1fc604ca55b8332659a42740dd3d467db",
+      "candidate_sha256": "86bb1ce14427fc6dde63e641092703e1fc604ca55b8332659a42740dd3d467db",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed2026.yaml",
+      "original_sha256": "971379be37282b448259f8d9b4100fa3e7420ed0282e5a3bf87dcbec584e4921",
+      "candidate_sha256": "971379be37282b448259f8d9b4100fa3e7420ed0282e5a3bf87dcbec584e4921",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed123.yaml",
+      "original_sha256": "9261db8008e41e2208edf0db832eaf2f2f78959e55512a7f91dc571b0bec0e12",
+      "candidate_sha256": "9261db8008e41e2208edf0db832eaf2f2f78959e55512a7f91dc571b0bec0e12",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed2026.yaml",
+      "original_sha256": "c32cee0c35148880a715221e158404df9c887e57a0f48ea797e5fd0c75568257",
+      "candidate_sha256": "c32cee0c35148880a715221e158404df9c887e57a0f48ea797e5fd0c75568257",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed42.yaml",
+      "original_sha256": "0b838bf35c738c871b6237e9df0776ca7c89d5af34f36b9e2f1114c787d595e0",
+      "candidate_sha256": "0b838bf35c738c871b6237e9df0776ca7c89d5af34f36b9e2f1114c787d595e0",
+      "identical": true,
+      "change": null
+    },
+    {
+      "path": "experiments/revision_eval/reviewer1/02_cross_dataset/scripts/audit_lplcv2_full_cohort_geometry.py",
+      "original_sha256": "0443b17110cf578a2c1a29c0699bf2aa89e86d69e0bf0c0bc1e91da5d92b86cc",
+      "candidate_sha256": "0443b17110cf578a2c1a29c0699bf2aa89e86d69e0bf0c0bc1e91da5d92b86cc",
+      "identical": true,
+      "change": null
+    }
+  ]
+}

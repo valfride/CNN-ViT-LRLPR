@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "source_commit": "a0f98444f02b8369f58b6154f2d1601c3673396b",
+  "identity_verification": "SHA256 calculated read-only on original controlled host files; no deserialization or inference",
+  "assets": [
+    {
+      "id": "full-42-ghost",
+      "variant": "full",
+      "seed": 42,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "checkpoint_sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "last.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1818,
+          "sequence_total": 3000,
+          "character_correct": 18666,
+          "character_total": 21000,
+          "edit_errors": 2330,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2446,
+          "partial_5_correct": 2683
+        },
+        "3": {
+          "sequence_correct": 2225,
+          "sequence_total": 3000,
+          "character_correct": 19521,
+          "character_total": 21000,
+          "edit_errors": 1476,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2649,
+          "partial_5_correct": 2828
+        },
+        "5": {
+          "sequence_correct": 2354,
+          "sequence_total": 3000,
+          "character_correct": 19772,
+          "character_total": 21000,
+          "edit_errors": 1226,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2718,
+          "partial_5_correct": 2851
+        }
+      }
+    },
+    {
+      "id": "full-123-ghost",
+      "variant": "full",
+      "seed": 123,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed123.yaml",
+      "checkpoint_sha256": "a0899e3bb263048fc1706bbbcd3cf8ab506dacef5e301d567477e754a9abd007",
+      "config_sha256": "9261db8008e41e2208edf0db832eaf2f2f78959e55512a7f91dc571b0bec0e12",
+      "checkpoint_filename": "ghost_acc_0.7710_ep_76.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1781,
+          "sequence_total": 3000,
+          "character_correct": 18535,
+          "character_total": 21000,
+          "edit_errors": 2464,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2394,
+          "partial_5_correct": 2687
+        },
+        "3": {
+          "sequence_correct": 2161,
+          "sequence_total": 3000,
+          "character_correct": 19428,
+          "character_total": 21000,
+          "edit_errors": 1572,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2641,
+          "partial_5_correct": 2813
+        },
+        "5": {
+          "sequence_correct": 2300,
+          "sequence_total": 3000,
+          "character_correct": 19675,
+          "character_total": 21000,
+          "edit_errors": 1325,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2712,
+          "partial_5_correct": 2830
+        }
+      }
+    },
+    {
+      "id": "full-2026-ghost",
+      "variant": "full",
+      "seed": 2026,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed2026.yaml",
+      "checkpoint_sha256": "b527f5422d7064380d5f2238ae011f968c83f668c3878ee9072e9b0447c6bc8b",
+      "config_sha256": "87fe0cf42d08fa77810d33034850054e6e92f62ab733ef4ea402f019486e7aac",
+      "checkpoint_filename": "ghost_acc_0.7680_ep_50.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1825,
+          "sequence_total": 3000,
+          "character_correct": 18676,
+          "character_total": 21000,
+          "edit_errors": 2324,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2430,
+          "partial_5_correct": 2705
+        },
+        "3": {
+          "sequence_correct": 2229,
+          "sequence_total": 3000,
+          "character_correct": 19518,
+          "character_total": 21000,
+          "edit_errors": 1480,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2651,
+          "partial_5_correct": 2821
+        },
+        "5": {
+          "sequence_correct": 2339,
+          "sequence_total": 3000,
+          "character_correct": 19753,
+          "character_total": 21000,
+          "edit_errors": 1246,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2708,
+          "partial_5_correct": 2856
+        }
+      }
+    },
+    {
+      "id": "no_restormer-42-ghost",
+      "variant": "no_restormer",
+      "seed": 42,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed42.yaml",
+      "checkpoint_sha256": "9bf18a7f584094c9df658b77e0a36186e9e4f59a11d2d260ce0b5107b2c33f4c",
+      "config_sha256": "5361feb843fad8a0549f806279ddc0fb58cdae754e5b8440c05fbfbd0cae5227",
+      "checkpoint_filename": "ghost_acc_0.7710_ep_69.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1807,
+          "sequence_total": 3000,
+          "character_correct": 18585,
+          "character_total": 21000,
+          "edit_errors": 2409,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2415,
+          "partial_5_correct": 2688
+        },
+        "3": {
+          "sequence_correct": 2215,
+          "sequence_total": 3000,
+          "character_correct": 19488,
+          "character_total": 21000,
+          "edit_errors": 1511,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2639,
+          "partial_5_correct": 2816
+        },
+        "5": {
+          "sequence_correct": 2298,
+          "sequence_total": 3000,
+          "character_correct": 19698,
+          "character_total": 21000,
+          "edit_errors": 1299,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2713,
+          "partial_5_correct": 2848
+        }
+      }
+    },
+    {
+      "id": "no_restormer-123-ghost",
+      "variant": "no_restormer",
+      "seed": 123,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed123.yaml",
+      "checkpoint_sha256": "ac5cde080ff3c9d9d71f064fda5ea139100f3cd9a26af3756adcb34e3d5e03a5",
+      "config_sha256": "cb8a35b10ef65e677f91bd1421f366dcd48f2e5a036f34115eaa1266eb60e88d",
+      "checkpoint_filename": "ghost_acc_0.7670_ep_70.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1790,
+          "sequence_total": 3000,
+          "character_correct": 18591,
+          "character_total": 21000,
+          "edit_errors": 2408,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2408,
+          "partial_5_correct": 2686
+        },
+        "3": {
+          "sequence_correct": 2192,
+          "sequence_total": 3000,
+          "character_correct": 19468,
+          "character_total": 21000,
+          "edit_errors": 1532,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2634,
+          "partial_5_correct": 2818
+        },
+        "5": {
+          "sequence_correct": 2285,
+          "sequence_total": 3000,
+          "character_correct": 19703,
+          "character_total": 21000,
+          "edit_errors": 1297,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2715,
+          "partial_5_correct": 2846
+        }
+      }
+    },
+    {
+      "id": "no_restormer-2026-ghost",
+      "variant": "no_restormer",
+      "seed": 2026,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed2026.yaml",
+      "checkpoint_sha256": "79c8ba176c64e1ca3cf9e40284296eb102b2438745575ab1762b921860dd2b68",
+      "config_sha256": "29ffc70478835b0605d4e9cad2c994dbf4a6cbb8bc2f72d703a07b5a607c52c9",
+      "checkpoint_filename": "ghost_acc_0.7660_ep_62.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1762,
+          "sequence_total": 3000,
+          "character_correct": 18526,
+          "character_total": 21000,
+          "edit_errors": 2473,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2406,
+          "partial_5_correct": 2693
+        },
+        "3": {
+          "sequence_correct": 2182,
+          "sequence_total": 3000,
+          "character_correct": 19427,
+          "character_total": 21000,
+          "edit_errors": 1572,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2633,
+          "partial_5_correct": 2807
+        },
+        "5": {
+          "sequence_correct": 2306,
+          "sequence_total": 3000,
+          "character_correct": 19701,
+          "character_total": 21000,
+          "edit_errors": 1299,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2716,
+          "partial_5_correct": 2843
+        }
+      }
+    },
+    {
+      "id": "no_pixelshuffle-42-ghost",
+      "variant": "no_pixelshuffle",
+      "seed": 42,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed42.yaml",
+      "checkpoint_sha256": "fdcfd7629f4891c0a0983a25c4db67c770227fee6e140c5956ef6041e83f550a",
+      "config_sha256": "11e31246a53d65e64c795f0cc6f3d81a189f68c9b8f8103e1d20048fb496972f",
+      "checkpoint_filename": "ghost_acc_0.7620_ep_66.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1785,
+          "sequence_total": 3000,
+          "character_correct": 18602,
+          "character_total": 21000,
+          "edit_errors": 2393,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2418,
+          "partial_5_correct": 2701
+        },
+        "3": {
+          "sequence_correct": 2169,
+          "sequence_total": 3000,
+          "character_correct": 19421,
+          "character_total": 21000,
+          "edit_errors": 1578,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2637,
+          "partial_5_correct": 2814
+        },
+        "5": {
+          "sequence_correct": 2268,
+          "sequence_total": 3000,
+          "character_correct": 19647,
+          "character_total": 21000,
+          "edit_errors": 1352,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2697,
+          "partial_5_correct": 2840
+        }
+      }
+    },
+    {
+      "id": "no_pixelshuffle-123-ghost",
+      "variant": "no_pixelshuffle",
+      "seed": 123,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed123.yaml",
+      "checkpoint_sha256": "f06cdd4f4e2edf625422efc786e8bc0b4967dd9bea8be3233651aec6b0a69d5e",
+      "config_sha256": "0873a0d47b23b6f39c5ecc805ac92caada25b0500459289b69675bd23ecbba4d",
+      "checkpoint_filename": "ghost_acc_0.7730_ep_57.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1768,
+          "sequence_total": 3000,
+          "character_correct": 18612,
+          "character_total": 21000,
+          "edit_errors": 2386,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2438,
+          "partial_5_correct": 2702
+        },
+        "3": {
+          "sequence_correct": 2176,
+          "sequence_total": 3000,
+          "character_correct": 19451,
+          "character_total": 21000,
+          "edit_errors": 1547,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2635,
+          "partial_5_correct": 2814
+        },
+        "5": {
+          "sequence_correct": 2305,
+          "sequence_total": 3000,
+          "character_correct": 19703,
+          "character_total": 21000,
+          "edit_errors": 1297,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2697,
+          "partial_5_correct": 2847
+        }
+      }
+    },
+    {
+      "id": "no_pixelshuffle-2026-ghost",
+      "variant": "no_pixelshuffle",
+      "seed": 2026,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed2026.yaml",
+      "checkpoint_sha256": "3efa11f4d13293d0729e97a57deef57e1f5771f1a2fcceb5eb1e15dbe1b8d043",
+      "config_sha256": "86bb1ce14427fc6dde63e641092703e1fc604ca55b8332659a42740dd3d467db",
+      "checkpoint_filename": "ghost_acc_0.7760_ep_73.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1790,
+          "sequence_total": 3000,
+          "character_correct": 18585,
+          "character_total": 21000,
+          "edit_errors": 2411,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2428,
+          "partial_5_correct": 2693
+        },
+        "3": {
+          "sequence_correct": 2196,
+          "sequence_total": 3000,
+          "character_correct": 19484,
+          "character_total": 21000,
+          "edit_errors": 1515,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2669,
+          "partial_5_correct": 2805
+        },
+        "5": {
+          "sequence_correct": 2295,
+          "sequence_total": 3000,
+          "character_correct": 19703,
+          "character_total": 21000,
+          "edit_errors": 1297,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2723,
+          "partial_5_correct": 2851
+        }
+      }
+    },
+    {
+      "id": "no_sfb-42-ghost",
+      "variant": "no_sfb",
+      "seed": 42,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed42.yaml",
+      "checkpoint_sha256": "2776bb5eba22033af82fcf0da007adc8514bbbbda268dc89fbca39840f65fad6",
+      "config_sha256": "4b75c9d6a410451fde61cdf349f30c5970e3088d71f827c92c9ccf8cd5b44d0f",
+      "checkpoint_filename": "ghost_acc_0.7670_ep_50.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1791,
+          "sequence_total": 3000,
+          "character_correct": 18668,
+          "character_total": 21000,
+          "edit_errors": 2329,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2455,
+          "partial_5_correct": 2719
+        },
+        "3": {
+          "sequence_correct": 2188,
+          "sequence_total": 3000,
+          "character_correct": 19485,
+          "character_total": 21000,
+          "edit_errors": 1515,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2656,
+          "partial_5_correct": 2822
+        },
+        "5": {
+          "sequence_correct": 2315,
+          "sequence_total": 3000,
+          "character_correct": 19742,
+          "character_total": 21000,
+          "edit_errors": 1257,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2714,
+          "partial_5_correct": 2854
+        }
+      }
+    },
+    {
+      "id": "no_sfb-123-ghost",
+      "variant": "no_sfb",
+      "seed": 123,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed123.yaml",
+      "checkpoint_sha256": "14e982e0b01b4dd1f8986ab32a526062d2f9c9bf451b74102f510f86fe042462",
+      "config_sha256": "b97d8824564b56574305c89a6aa02e6a3bd45e2fe1287ce2de82b09c89736cf1",
+      "checkpoint_filename": "ghost_acc_0.7530_ep_47.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1780,
+          "sequence_total": 3000,
+          "character_correct": 18593,
+          "character_total": 21000,
+          "edit_errors": 2404,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2415,
+          "partial_5_correct": 2704
+        },
+        "3": {
+          "sequence_correct": 2180,
+          "sequence_total": 3000,
+          "character_correct": 19455,
+          "character_total": 21000,
+          "edit_errors": 1545,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2645,
+          "partial_5_correct": 2807
+        },
+        "5": {
+          "sequence_correct": 2309,
+          "sequence_total": 3000,
+          "character_correct": 19688,
+          "character_total": 21000,
+          "edit_errors": 1312,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2701,
+          "partial_5_correct": 2833
+        }
+      }
+    },
+    {
+      "id": "no_sfb-2026-ghost",
+      "variant": "no_sfb",
+      "seed": 2026,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed2026.yaml",
+      "checkpoint_sha256": "332437a5efc6de65341261392b3cf12911b72c4d09997d1ac78b30158a252cd4",
+      "config_sha256": "971379be37282b448259f8d9b4100fa3e7420ed0282e5a3bf87dcbec584e4921",
+      "checkpoint_filename": "ghost_acc_0.7600_ep_75.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1770,
+          "sequence_total": 3000,
+          "character_correct": 18515,
+          "character_total": 21000,
+          "edit_errors": 2482,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2391,
+          "partial_5_correct": 2677
+        },
+        "3": {
+          "sequence_correct": 2163,
+          "sequence_total": 3000,
+          "character_correct": 19387,
+          "character_total": 21000,
+          "edit_errors": 1611,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2618,
+          "partial_5_correct": 2808
+        },
+        "5": {
+          "sequence_correct": 2275,
+          "sequence_total": 3000,
+          "character_correct": 19622,
+          "character_total": 21000,
+          "edit_errors": 1378,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2693,
+          "partial_5_correct": 2822
+        }
+      }
+    },
+    {
+      "id": "linear_head-42-ghost",
+      "variant": "linear_head",
+      "seed": 42,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed42.yaml",
+      "checkpoint_sha256": "615fbfadc1a27ebae33f38b4df4cc9ab4a5785b5e69204f0c06f4b0b58dd8040",
+      "config_sha256": "91cc9857dae70bd142cc6dd9da8c98cee34b1fd64085d8572835e7a994d02b40",
+      "checkpoint_filename": "ghost_acc_0.7670_ep_51.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1792,
+          "sequence_total": 3000,
+          "character_correct": 18610,
+          "character_total": 21000,
+          "edit_errors": 2388,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2428,
+          "partial_5_correct": 2704
+        },
+        "3": {
+          "sequence_correct": 2207,
+          "sequence_total": 3000,
+          "character_correct": 19518,
+          "character_total": 21000,
+          "edit_errors": 1481,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2667,
+          "partial_5_correct": 2822
+        },
+        "5": {
+          "sequence_correct": 2330,
+          "sequence_total": 3000,
+          "character_correct": 19748,
+          "character_total": 21000,
+          "edit_errors": 1251,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2726,
+          "partial_5_correct": 2844
+        }
+      }
+    },
+    {
+      "id": "linear_head-123-ghost",
+      "variant": "linear_head",
+      "seed": 123,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed123.yaml",
+      "checkpoint_sha256": "3fe6ca1520d554dfee2b4ddcb69a29cf39ab166bcac630593c6d177cca6cde0e",
+      "config_sha256": "ccbc7560ad72689eb12115ec58543165ae866f08de6df1785f582536f667734a",
+      "checkpoint_filename": "ghost_acc_0.7660_ep_46.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1796,
+          "sequence_total": 3000,
+          "character_correct": 18648,
+          "character_total": 21000,
+          "edit_errors": 2350,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2439,
+          "partial_5_correct": 2703
+        },
+        "3": {
+          "sequence_correct": 2197,
+          "sequence_total": 3000,
+          "character_correct": 19492,
+          "character_total": 21000,
+          "edit_errors": 1507,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2657,
+          "partial_5_correct": 2818
+        },
+        "5": {
+          "sequence_correct": 2332,
+          "sequence_total": 3000,
+          "character_correct": 19775,
+          "character_total": 21000,
+          "edit_errors": 1223,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2723,
+          "partial_5_correct": 2854
+        }
+      }
+    },
+    {
+      "id": "linear_head-2026-ghost",
+      "variant": "linear_head",
+      "seed": 2026,
+      "weight_source": "ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed2026.yaml",
+      "checkpoint_sha256": "55abb56873a4e4ff3db1a28ec077bb0b1f882fe20c72b91cf42ea94be45c987e",
+      "config_sha256": "c32cee0c35148880a715221e158404df9c887e57a0f48ea797e5fd0c75568257",
+      "checkpoint_filename": "ghost_acc_0.7740_ep_57.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1753,
+          "sequence_total": 3000,
+          "character_correct": 18520,
+          "character_total": 21000,
+          "edit_errors": 2478,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2403,
+          "partial_5_correct": 2684
+        },
+        "3": {
+          "sequence_correct": 2190,
+          "sequence_total": 3000,
+          "character_correct": 19454,
+          "character_total": 21000,
+          "edit_errors": 1545,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2638,
+          "partial_5_correct": 2808
+        },
+        "5": {
+          "sequence_correct": 2316,
+          "sequence_total": 3000,
+          "character_correct": 19700,
+          "character_total": 21000,
+          "edit_errors": 1299,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2699,
+          "partial_5_correct": 2843
+        }
+      }
+    },
+    {
+      "id": "full-42-student",
+      "variant": "full",
+      "seed": 42,
+      "weight_source": "student",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "checkpoint_sha256": "6f5e908a63382a19da137b1f0147aff3adf9c1deae23761470809fe431e9ef55",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "student_acc_0.7510_ep_96.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1778,
+          "sequence_total": 3000,
+          "character_correct": 18557,
+          "character_total": 21000,
+          "edit_errors": 2441,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2413,
+          "partial_5_correct": 2672
+        },
+        "3": {
+          "sequence_correct": 2192,
+          "sequence_total": 3000,
+          "character_correct": 19430,
+          "character_total": 21000,
+          "edit_errors": 1570,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2624,
+          "partial_5_correct": 2805
+        },
+        "5": {
+          "sequence_correct": 2290,
+          "sequence_total": 3000,
+          "character_correct": 19665,
+          "character_total": 21000,
+          "edit_errors": 1334,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2689,
+          "partial_5_correct": 2840
+        }
+      }
+    },
+    {
+      "id": "full-123-student",
+      "variant": "full",
+      "seed": 123,
+      "weight_source": "student",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed123.yaml",
+      "checkpoint_sha256": "86cf4e38ab2132d6247ba54285bafa312ce718a0b32cdc64f1c0df3228647512",
+      "config_sha256": "9261db8008e41e2208edf0db832eaf2f2f78959e55512a7f91dc571b0bec0e12",
+      "checkpoint_filename": "student_acc_0.7600_ep_85.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1749,
+          "sequence_total": 3000,
+          "character_correct": 18483,
+          "character_total": 21000,
+          "edit_errors": 2512,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2385,
+          "partial_5_correct": 2678
+        },
+        "3": {
+          "sequence_correct": 2144,
+          "sequence_total": 3000,
+          "character_correct": 19335,
+          "character_total": 21000,
+          "edit_errors": 1664,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2617,
+          "partial_5_correct": 2796
+        },
+        "5": {
+          "sequence_correct": 2268,
+          "sequence_total": 3000,
+          "character_correct": 19609,
+          "character_total": 21000,
+          "edit_errors": 1390,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2694,
+          "partial_5_correct": 2829
+        }
+      }
+    },
+    {
+      "id": "full-2026-student",
+      "variant": "full",
+      "seed": 2026,
+      "weight_source": "student",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed2026.yaml",
+      "checkpoint_sha256": "cc832d3fcb7d6f12e4561e2fbe3c20da88e2d27065bc30b721b60e3cd7a031f6",
+      "config_sha256": "87fe0cf42d08fa77810d33034850054e6e92f62ab733ef4ea402f019486e7aac",
+      "checkpoint_filename": "student_acc_0.7630_ep_67.pth",
+      "expected": {
+        "1": {
+          "sequence_correct": 1768,
+          "sequence_total": 3000,
+          "character_correct": 18558,
+          "character_total": 21000,
+          "edit_errors": 2440,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2408,
+          "partial_5_correct": 2700
+        },
+        "3": {
+          "sequence_correct": 2186,
+          "sequence_total": 3000,
+          "character_correct": 19452,
+          "character_total": 21000,
+          "edit_errors": 1547,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2642,
+          "partial_5_correct": 2809
+        },
+        "5": {
+          "sequence_correct": 2278,
+          "sequence_total": 3000,
+          "character_correct": 19658,
+          "character_total": 21000,
+          "edit_errors": 1339,
+          "ground_truth_characters": 21000,
+          "partial_6_correct": 2695,
+          "partial_5_correct": 2847
+        }
+      }
+    }
+  ]
+}

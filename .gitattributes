@@ -1,0 +1,4 @@
+# Preserve byte identities of all scientific YAML snapshots across checkouts.
+*.yaml -text
+baselines_configs/SVTRV2_AR_BASELINE.yaml whitespace=-blank-at-eof
+reproducibility/reference/*.csv text eol=lf

@@ -1,0 +1,7 @@
+seed,weight_source,checkpoint_filename,epoch,validation_accuracy,provenance,sha256_status
+42,student,student_acc_0.7510_ep_96.pth,96,0.751,historical_submitted_seed42_trajectory,not recorded in this manifest; actual bytes need controlled verification
+42,ghost,ghost_acc_0.7660_ep_58.pth,58,0.766,historical_submitted_seed42_trajectory,not recorded in this manifest; actual bytes need controlled verification
+123,student,student_acc_0.7600_ep_85.pth,85,0.76,controlled_full_training,not recorded in this manifest; actual bytes need controlled verification
+123,ghost,ghost_acc_0.7710_ep_76.pth,76,0.771,controlled_full_training,not recorded in this manifest; actual bytes need controlled verification
+2026,student,student_acc_0.7630_ep_67.pth,67,0.763,controlled_full_training,not recorded in this manifest; actual bytes need controlled verification
+2026,ghost,ghost_acc_0.7680_ep_50.pth,50,0.768,controlled_full_training,not recorded in this manifest; actual bytes need controlled verification

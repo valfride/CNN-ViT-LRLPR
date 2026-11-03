@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "paper_commit": "b0b0e947ae7bf30cfd5f340ba3c1f240515112b6",
+  "scientific_code_commits": {
+    "v6": "ee6b74e2ae4409e1451e808e7067f4b8b70d3b32",
+    "test_controls": "4580ed892fe6d1201235da9ee122ba7fac7e009d",
+    "reports": "a0f98444f02b8369f58b6154f2d1601c3673396b"
+  },
+  "models": {
+    "ours": {
+      "name": "Ours",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "last.pth",
+      "checkpoint_sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
+      "source_epoch": 58,
+      "loss": "CE"
+    },
+    "mdiff4str": {
+      "name": "MDiff4STR",
+      "config": "baselines_configs/MDIFF_BASELINE.yaml",
+      "config_sha256": "bbca4c50586fe343f7e6bf14e1f75086403d910ccd7b4327c43383a354c516d9",
+      "checkpoint_filename": "model_acc_0.6040_ep_21.pth",
+      "checkpoint_sha256": "e7ec4524f397a15fe1ce7629b40c7cf7415028434eec2a3be0d092c9d64f5143",
+      "source_epoch": null,
+      "loss": "MDIFF_INTERNAL"
+    },
+    "cppd": {
+      "name": "CPPD",
+      "config": "baselines_configs/CPPD_BASELINE.yaml",
+      "config_sha256": "3a3e2e1e76b18d92fad2629b33cc05b5c5cd4a7d21a4f83e49b65a1267cbf402",
+      "checkpoint_filename": "model_acc_0.6880_ep_77.pth",
+      "checkpoint_sha256": "1de6f9cd0d424e714cb2c7721747ea296a82760f8a786f1849793fe5c1e7e89f",
+      "source_epoch": null,
+      "loss": "CPPD"
+    },
+    "igtr": {
+      "name": "IGTR",
+      "config": "baselines_configs/IGTR_BASELINE.yaml",
+      "config_sha256": "5d33570d2e08e3792d8d6af985c7b1133a923247835031d743fe237944ccf773",
+      "checkpoint_filename": "model_acc_0.6600_ep_61.pth",
+      "checkpoint_sha256": "5d6a367dbb888a65e540b3491779cfa1fefa8dd69e33048c35d3faaa8d9d75d0",
+      "source_epoch": null,
+      "loss": "IGTR_INTERNAL"
+    },
+    "lister": {
+      "name": "LISTER",
+      "config": "baselines_configs/LISTER_BASELINE.yaml",
+      "config_sha256": "99a1e17a2f104ab0ce0c7cb1717ee67b86c631cfed50f08896bb3804e3f64416",
+      "checkpoint_filename": "model_acc_0.6830_ep_113.pth",
+      "checkpoint_sha256": "bd94b4bec91dadd1cc6ad93cb4f2941819ce486451e32d0b0cff226d48ba4ec0",
+      "source_epoch": 113,
+      "loss": "LISTER_INTERNAL"
+    },
+    "svtrv2": {
+      "name": "SVTRv2",
+      "config": "baselines_configs/SVTRV2_BASELINE.yaml",
+      "config_sha256": "9a48913d5ef5e93d1037219687d872f67b37d4cdbdba0c4ef22b345d5acb89cb",
+      "checkpoint_filename": "model_acc_0.7030_ep_156.pth",
+      "checkpoint_sha256": "6590d3da20d204c235e88a65871b8bc04b85ca3dd6d52ad81f73face8b68f231",
+      "source_epoch": 156,
+      "loss": "CTC"
+    },
+    "ote": {
+      "name": "OTE",
+      "config": "baselines_configs/OTE_BASELINE.yaml",
+      "config_sha256": "f431a42fd9eb1c446b95b527973062f0ef37db9054251f03a56e89ab52421636",
+      "checkpoint_filename": "model_acc_0.7430_ep_88.pth",
+      "checkpoint_sha256": "2a64e2fcee16e1aaa1ebd2fdfa93a140d55e31231d8c44f4608b831fe47408a1",
+      "source_epoch": null,
+      "loss": "OTE"
+    },
+    "svtrv2_ar": {
+      "name": "SVTRv2-AR",
+      "config": "baselines_configs/SVTRV2_AR_BASELINE.yaml",
+      "config_sha256": "f8c656f5486018553c88746678de842d7dd5ff3ebb30f1697ad48a3e8dc0a31f",
+      "checkpoint_filename": "student_acc_0.7500_ep_52.pth",
+      "checkpoint_sha256": "c6f89c74deed70ab9dcc7ca46d7dd0f7c21cb0b3074a4dd15313689eb8692838",
+      "source_epoch": null,
+      "loss": "SVTRV2_AR"
+    }
+  },
+  "datasets": {
+    "test": {
+      "phase": "test",
+      "samples": 3000,
+      "files": {
+        "metadata.pkl": "d3a6840e0cc1d9e40fba1c27346bf1a3e33fc1250631b9982fd0bf8765e012c6",
+        "data.mdb": "a4cae3366f2d66a74ab902d43552e04f9be14360831463ddbc54b5601ce40f7a"
+      }
+    },
+    "validation": {
+      "phase": "validation",
+      "samples": 1000,
+      "files": {
+        "metadata.pkl": "7fc89f2a9a4062677de3ec25709bcab8dfd2946c7395fa1bc080fd543e186e73",
+        "data.mdb": "e98b8b44ea437fe96ad77611cfeb99058e9036f99b5b49c0b33028395dfac2a6"
+      }
+    },
+    "lplcv2": {
+      "phase": "test",
+      "samples": 7023,
+      "groups": {
+        "Poor": 6240,
+        "Illegible": 783
+      },
+      "files": {
+        "metadata.pkl": "8d931612d71bb4b695bb4c76e4382dd671c45a80f277a6762ad343a08b24b774",
+        "data.mdb": "9974a14b70727ab1cd127df66e70b3a31425630aa5df7e12698fe908d6a0d25d",
+        "selection_manifest.json": "107d53e3c2f48ecfe118bb222a828080f6750632b7c9b51a523ef186347ffb48",
+        "dataset_info.json": "ce138bcd17d19c1233468cfbf074f2909c23e99be72b22d1ce5eb81d7b679b62"
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.9.21",
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "global_deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "driver": "580.82.09",
+    "evaluator_sha256": "5581d8f4cf848521dd1a2b9703ed1891c1fb0d86e143d492877c1130f3e1f60a",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "numpy": "2.0.2",
+    "PyYAML": "6.0.2",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "selection": {
+    "status": "frozen; never reselect from reader test scores",
+    "fusion_by_model_F": "bayes in all16 validation comparisons",
+    "selection_sha256": "b2d005f909d5d3d36e13e2c9f8f4915436dc5cf302fa9e7386541a5c43050867"
+  },
+  "x3": "deferred; source/configuration unchanged",
+  "asset_release": "not authorized or performed",
+  "paper_reference": {
+    "reviewed_snapshot_commit": "b0b0e947ae7bf30cfd5f340ba3c1f240515112b6",
+    "status": "historical_review_snapshot; manuscript revisions in progress",
+    "latest_commit_assumed": false,
+    "final_consistency_review": "pending user completion and identification of the new paper commit",
+    "scientific_protocol": "established frozen protocol and original execution records remain authoritative",
+    "reported_display_decision": "Three Table3 historical displays approved on 2026-11-03; see PAPER_DISPLAY_DISCLOSURES.json"
+  }
+}

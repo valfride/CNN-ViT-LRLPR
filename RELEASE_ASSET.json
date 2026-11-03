@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "publication_status": "private_staging_pending_upload_verification",
+  "assets": [
+    {
+      "model": "CNN\u2013ViT",
+      "weight_source": "EMA",
+      "selected_epoch": 58,
+      "release_filename": "ema_weights.pth",
+      "original_evaluation_filename": "last.pth",
+      "size_bytes": 64267208,
+      "sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "release_url": null,
+      "download_url": null
+    }
+  ],
+  "baseline_primary_other_seed_ablation_assets_included": false
+}

@@ -1,0 +1,99 @@
+# Python caches / environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editors / local sync metadata
+.vscode/
+.stfolder/
+.stffolder/
+
+# Local datasets and dataset links
+LMDB-Datasets
+*LMDB*/
+*lmdb*/
+*RodoSol*/
+Competition*/
+UFPR-ALPR-Dataset/
+datasets/synEngine/
+tst/
+
+# Local scratch / legacy folders
+MaybeTrash/
+404-backup_new_code/
+
+# Checkpoints and training outputs
+*.pth
+*.pt
+*.ckpt
+experiments/
+outputs/
+outputs_*/
+train/
+train_features/
+samples2infer/
+vpeg_debug_maps/
+nohup.out
+*.log
+
+# Generated evaluation artifacts
+submission*.txt
+validation_failures*.txt
+config_snapshot.yaml
+loss_log.csv
+
+# OS metadata
+.DS_Store
+
+# OJITS source-only allowlist: no experimental output trees.
+!experiments/
+experiments/**
+!experiments/
+!experiments/revision_eval/
+!experiments/revision_eval/reviewer1/
+!experiments/revision_eval/reviewer2/
+!experiments/revision_eval/shared/
+!experiments/revision_eval/submitted_model/
+!experiments/revision_eval/reviewer1/01_efficiency/
+!experiments/revision_eval/reviewer1/02_cross_dataset/
+!experiments/revision_eval/reviewer2/01_controlled_ablation/
+!experiments/revision_eval/shared/scripts/
+!experiments/revision_eval/reviewer1/01_efficiency/scripts/
+!experiments/revision_eval/reviewer1/02_cross_dataset/scripts/
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/
+!experiments/revision_eval/submitted_model/config_snapshot.yaml
+!experiments/revision_eval/shared/scripts/run_eval_matrix.py
+!experiments/revision_eval/shared/scripts/audit_frame_order.py
+!experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_efficiency.py
+!experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_one.py
+!experiments/revision_eval/reviewer1/02_cross_dataset/scripts/build_lplcv2_acquisition_pair.py
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed123.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed42.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed123.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed123.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed2026.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed42.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed123.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed2026.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed42.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed42.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed2026.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed2026.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed123.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed2026.yaml
+!experiments/revision_eval/reviewer2/01_controlled_ablation/configs/full_seed42.yaml
+!experiments/revision_eval/reviewer1/02_cross_dataset/scripts/audit_lplcv2_full_cohort_geometry.py
+
+# Never track model/data/output records in the companion source branch.
+*.pth
+*.pt
+*.ckpt
+*.mdb
+*.pkl
+*_predictions.csv
+loss_log.csv
+validation_failures*.txt
+__pycache__/
+*.py[cod]

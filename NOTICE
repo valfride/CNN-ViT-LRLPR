@@ -1,0 +1,40 @@
+CNN-ViT-LRLPR — third-party attribution and local modification notices
+
+Original/coauthored contributions: coauthor/IP publication approval confirmed by
+user on3November2026. Apache-2.0 is approved for those original contributions;
+see LICENSE. Third-party components retain their own applicable terms. This file
+is informational and does not change upstream terms or license weights/datasets.
+
+OpenOCR contributors, https://github.com/Topdu/OpenOCR
+Reference revision:1ccfc6ee6161f7133b192e16af3a9265273997ba.
+Baseline encoders,decoders,label encoders,losses and shared model utilities are
+locally adapted. The original copy date is not established for older files;
+reference similarity is recorded rather than represented as a historical claim.
+Apache-2.0 reference text:third_party/OpenOCR.LICENSE.
+
+LISTER:Copyright(2023)Alibaba Group and its affiliates.
+Original project:AlibabaResearch/AdvancedLiterateMachinery/OCR/LISTER;OpenOCR port.
+Its nested Apache-2.0 terms are retained in third_party/LISTER.LICENSE;the root
+reference is third_party/AdvancedLiterateMachinery.LICENSE.
+
+FocalNets/FocalNet:Copyright(c)2022Microsoft;written by Jianwei Yang.
+The original Microsoft MIT header remains in models/svtrv2/focalsvtr.py.
+Applicable MIT reference text:third_party/FocalNet.LICENSE.
+
+Restormer:Copyright(c)2022Syed Waqas Zamir and contributors.
+Restormer-derived MDTA/GDFN blocks are locally adapted with directional depthwise
+convolutions,GroupNorm/FReLU and integration into the proposed spatial extractor.
+MIT reference text:third_party/Restormer.LICENSE.
+
+Local changes include import remapping,32x96 RGB inputs,shared LRLPR vocabulary,
+seven-character protocol/targets,model/loss adapters and native-output handling;
+SVTRv2-AR reconstructs an OpenOCR SVTRNet+NRTR architecture and implements shared-
+prefix PRF/average versus independent-frame voting. The validation-selected
+checkpoint identities and scientific execution bodies are unchanged.
+
+All upstream source copyright/license notices are retained. Per-file modification
+headers identify locally adapted files;see SOURCE_PROVENANCE_LEDGER.csv and
+third_party/UPSTREAM_SOURCES.json. No bibliography entry substitutes for a license.
+Dependencies are installed independently under their own terms;their binaries are
+not bundled. Model weights and datasets have separate,unresolved distribution
+terms and are not licensed by this NOTICE or an eventual source-code license.

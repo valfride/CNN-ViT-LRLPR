@@ -1,0 +1,42 @@
+{
+  "table": 3,
+  "status": "Approved authoritative reported displays; original counts and direct arithmetic preserved separately",
+  "source": "a0f98444:experiments/revision_eval/reviewer1/02_cross_dataset/FULL_LPLCV2_COHORT_AUDIT.md, all-model padded results",
+  "interpretation": "Paper values are consistent with a second rounding of archived two-decimal values; no new rounding is applied to evaluator metrics.",
+  "differences": [
+    {
+      "model": "Ours",
+      "metric": "partial6_percent",
+      "numerator": 5650,
+      "denominator": 7023,
+      "paper_display": "80.5",
+      "direct_one_decimal": "80.4",
+      "archived_two_decimal": "80.45"
+    },
+    {
+      "model": "MDiff4STR",
+      "metric": "partial5_percent",
+      "numerator": 4751,
+      "denominator": 7023,
+      "paper_display": "67.7",
+      "direct_one_decimal": "67.6",
+      "archived_two_decimal": "67.65"
+    },
+    {
+      "model": "SVTRv2-AR",
+      "metric": "partial6_percent",
+      "numerator": 4477,
+      "denominator": 7023,
+      "paper_display": "63.8",
+      "direct_one_decimal": "63.7",
+      "archived_two_decimal": "63.75"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "authority": "User scientific decision in this chat",
+    "date": "2026-11-03",
+    "scope": "Retain reported 80.5%, 67.7%, 63.8% in reproduction documentation/reference tables only; no metric, prediction, checkpoint or experimental output change",
+    "direct_rounding_equivalence_claim": false
+  }
+}

@@ -1,0 +1,17 @@
+# Versions verified against the author's shared yolov11 environment.
+# Install the pinned cu124 PyTorch/torchvision first; see docs/READER_START_HERE.md.
+# Use -c requirements/constraints-paper-py39.txt to avoid unvalidated dependency upgrades.
+
+numpy==2.0.2
+Pillow==11.1.0
+PyYAML==6.0.2
+tqdm==4.67.3
+opencv-python==4.13.0.92
+lmdb==1.8.1
+albumentations==2.0.8
+kornia==0.8.2
+matplotlib==3.9.4
+einops==0.8.2
+timm==1.0.26
+higher==0.2.1
+tensorboardX==2.6.4

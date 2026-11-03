@@ -1,0 +1,548 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "kind": "synthetic_gpu_compatibility_not_numerical_reproduction",
+  "starting_commit": "8b28c33cb49c81955b6cdf814199c803ef6f638b",
+  "physical_gpu_index": 0,
+  "visible_device": "cuda:0",
+  "gpu_model": "Quadro RTX 8000",
+  "runtime": {
+    "python": "3.9.21",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "numpy": "2.0.2",
+    "PyYAML": "6.0.2",
+    "cuda": "12.4",
+    "cudnn": 90100
+  },
+  "runtime_mismatches": {},
+  "main_models_pass": 8,
+  "ablation_rows_pass": 6,
+  "unique_checkpoint_workers_pass": 13,
+  "main_native_inference_paths_pass": 96,
+  "efficiency_single_fp16_forwards_pass": 8,
+  "additional_ablation_f1_paths_pass": 5,
+  "reused_ablation_rows": 1,
+  "cpu_tests_pass": 26,
+  "records": [
+    {
+      "id": "ours",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "last.pth",
+      "checkpoint_sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]",
+        "[3, 7, 38]",
+        "[5, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 207.7734375,
+      "peak_reserved_mib": 292.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "mdiff4str",
+      "config": "baselines_configs/MDIFF_BASELINE.yaml",
+      "config_sha256": "bbca4c50586fe343f7e6bf14e1f75086403d910ccd7b4327c43383a354c516d9",
+      "checkpoint_filename": "model_acc_0.6040_ep_21.pth",
+      "checkpoint_sha256": "e7ec4524f397a15fe1ce7629b40c7cf7415028434eec2a3be0d092c9d64f5143",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 37]",
+        "[3, 7, 37]",
+        "[5, 7, 37]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 204.67578125,
+      "peak_reserved_mib": 216.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "cppd",
+      "config": "baselines_configs/CPPD_BASELINE.yaml",
+      "config_sha256": "3a3e2e1e76b18d92fad2629b33cc05b5c5cd4a7d21a4f83e49b65a1267cbf402",
+      "checkpoint_filename": "model_acc_0.6880_ep_77.pth",
+      "checkpoint_sha256": "1de6f9cd0d424e714cb2c7721747ea296a82760f8a786f1849793fe5c1e7e89f",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 8, 38]",
+        "[3, 8, 38]",
+        "[5, 8, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 167.31982421875,
+      "peak_reserved_mib": 186.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "igtr",
+      "config": "baselines_configs/IGTR_BASELINE.yaml",
+      "config_sha256": "5d33570d2e08e3792d8d6af985c7b1133a923247835031d743fe237944ccf773",
+      "checkpoint_filename": "model_acc_0.6600_ep_61.pth",
+      "checkpoint_sha256": "5d6a367dbb888a65e540b3491779cfa1fefa8dd69e33048c35d3faaa8d9d75d0",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 27, 37]",
+        "[3, 27, 37]",
+        "[5, 27, 37]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 195.93017578125,
+      "peak_reserved_mib": 216.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "lister",
+      "config": "baselines_configs/LISTER_BASELINE.yaml",
+      "config_sha256": "99a1e17a2f104ab0ce0c7cb1717ee67b86c631cfed50f08896bb3804e3f64416",
+      "checkpoint_filename": "model_acc_0.6830_ep_113.pth",
+      "checkpoint_sha256": "bd94b4bec91dadd1cc6ad93cb4f2941819ce486451e32d0b0cff226d48ba4ec0",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 37]",
+        "[3, 7, 37]",
+        "[5, 7, 37]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 48.21484375,
+      "peak_reserved_mib": 62.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "svtrv2",
+      "config": "baselines_configs/SVTRV2_BASELINE.yaml",
+      "config_sha256": "9a48913d5ef5e93d1037219687d872f67b37d4cdbdba0c4ef22b345d5acb89cb",
+      "checkpoint_filename": "model_acc_0.7030_ep_156.pth",
+      "checkpoint_sha256": "6590d3da20d204c235e88a65871b8bc04b85ca3dd6d52ad81f73face8b68f231",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 24, 38]",
+        "[3, 24, 38]",
+        "[5, 24, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 36.05029296875,
+      "peak_reserved_mib": 50.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "ote",
+      "config": "baselines_configs/OTE_BASELINE.yaml",
+      "config_sha256": "f431a42fd9eb1c446b95b527973062f0ef37db9054251f03a56e89ab52421636",
+      "checkpoint_filename": "model_acc_0.7430_ep_88.pth",
+      "checkpoint_sha256": "2a64e2fcee16e1aaa1ebd2fdfa93a140d55e31231d8c44f4608b831fe47408a1",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 37]",
+        "[3, 7, 37]",
+        "[5, 7, 37]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 126.33544921875,
+      "peak_reserved_mib": 134.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "svtrv2_ar",
+      "config": "baselines_configs/SVTRV2_AR_BASELINE.yaml",
+      "config_sha256": "f8c656f5486018553c88746678de842d7dd5ff3ebb30f1697ad48a3e8dc0a31f",
+      "checkpoint_filename": "student_acc_0.7500_ep_52.pth",
+      "checkpoint_sha256": "c6f89c74deed70ab9dcc7ca46d7dd0f7c21cb0b3074a4dd15313689eb8692838",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1,
+        3,
+        5
+      ],
+      "fusion_rules_tested": [
+        "bayes",
+        "average",
+        "majority",
+        "char_majority"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 8, 37]",
+        "[3, 8, 37]",
+        "[5, 8, 37]"
+      ],
+      "score_dtypes": [
+        "torch.float32"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 149.294921875,
+      "peak_reserved_mib": 160.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "PASS",
+      "reused_from": null
+    },
+    {
+      "id": "full-42-ghost",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "last.pth",
+      "checkpoint_sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]",
+        "[3, 7, 38]",
+        "[5, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 207.7734375,
+      "peak_reserved_mib": 292.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": "ours"
+    },
+    {
+      "id": "no_restormer-42-ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_restormer_seed42.yaml",
+      "config_sha256": "5361feb843fad8a0549f806279ddc0fb58cdae754e5b8440c05fbfbd0cae5227",
+      "checkpoint_filename": "ghost_acc_0.7710_ep_69.pth",
+      "checkpoint_sha256": "9bf18a7f584094c9df658b77e0a36186e9e4f59a11d2d260ce0b5107b2c33f4c",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 110.97265625,
+      "peak_reserved_mib": 130.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": null
+    },
+    {
+      "id": "no_pixelshuffle-42-ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_pixelshuffle_seed42.yaml",
+      "config_sha256": "11e31246a53d65e64c795f0cc6f3d81a189f68c9b8f8103e1d20048fb496972f",
+      "checkpoint_filename": "ghost_acc_0.7620_ep_66.pth",
+      "checkpoint_sha256": "fdcfd7629f4891c0a0983a25c4db67c770227fee6e140c5956ef6041e83f550a",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 108.58935546875,
+      "peak_reserved_mib": 122.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": null
+    },
+    {
+      "id": "no_sfb-42-ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/no_sfb_seed42.yaml",
+      "config_sha256": "4b75c9d6a410451fde61cdf349f30c5970e3088d71f827c92c9ccf8cd5b44d0f",
+      "checkpoint_filename": "ghost_acc_0.7670_ep_50.pth",
+      "checkpoint_sha256": "2776bb5eba22033af82fcf0da007adc8514bbbbda268dc89fbca39840f65fad6",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 111.904296875,
+      "peak_reserved_mib": 130.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": null
+    },
+    {
+      "id": "linear_head-42-ghost",
+      "config": "experiments/revision_eval/reviewer2/01_controlled_ablation/configs/linear_head_seed42.yaml",
+      "config_sha256": "91cc9857dae70bd142cc6dd9da8c98cee34b1fd64085d8572835e7a994d02b40",
+      "checkpoint_filename": "ghost_acc_0.7670_ep_51.pth",
+      "checkpoint_sha256": "615fbfadc1a27ebae33f38b4df4cc9ab4a5785b5e69204f0c06f4b0b58dd8040",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 116.8125,
+      "peak_reserved_mib": 130.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": null
+    },
+    {
+      "id": "full-42-student",
+      "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
+      "config_sha256": "9db50ded91aabfff67d2863057e51bd4ef6a8dd8da5ce7a67c61fe3626fd7673",
+      "checkpoint_filename": "student_acc_0.7510_ep_96.pth",
+      "checkpoint_sha256": "6f5e908a63382a19da137b1f0147aff3adf9c1deae23761470809fe431e9ef55",
+      "status": "PASS",
+      "strict_load": "PASS",
+      "decoder": "PASS",
+      "frames_tested": [
+        1
+      ],
+      "fusion_rules_tested": [
+        "bayes"
+      ],
+      "input_shape": "[1,F,3,32,96]",
+      "input_dtype": "torch.float32",
+      "input_device": "cuda:0",
+      "precision": "CUDA FP16 autocast; native score dtype retained",
+      "score_shapes": [
+        "[1, 7, 38]"
+      ],
+      "score_dtypes": [
+        "torch.float16"
+      ],
+      "scores_finite": true,
+      "peak_allocated_mib": 116.8125,
+      "peak_reserved_mib": 130.0,
+      "checkpoint_unchanged_after": true,
+      "efficiency_fp16_forward": "not requested",
+      "reused_from": null
+    }
+  ],
+  "tested_source_sha256": {
+    "test.py": "faae9b25e1c410bb959ea5de17e1e19a4acedec4cc26ec624db510e3dd4aa463",
+    "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_one.py": "f600b549285421dce2dbd92774b06e142f98acbc864f8b463c1a83b03b3f8999",
+    "reproducibility/smoke.py": "a3d622c3e6745fcea8e8ffecb444f60f39286eedeb1aedf8167a3b4424f2322b"
+  },
+  "limitations": [
+    "Synthetic RGB input only; no dataset opened",
+    "No accuracy or numerical table reproduction",
+    "No timing benchmark or three-seed recalculation",
+    "Native FP32 score outputs under FP16 autocast are retained",
+    "X3 deferred",
+    "Release permissions and final paper-commit review remain pending"
+  ]
+}

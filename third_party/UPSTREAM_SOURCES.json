@@ -1,0 +1,23 @@
+{
+  "Topdu/OpenOCR": {
+    "reviewed_revision": "1ccfc6ee6161f7133b192e16af3a9265273997ba",
+    "copied_revision_established": "SVTRv2-AR recipe reference only; not proven copy origin for older local components",
+    "license_url": "https://github.com/Topdu/OpenOCR/blob/1ccfc6ee6161f7133b192e16af3a9265273997ba/LICENSE"
+  },
+  "AlibabaResearch/AdvancedLiterateMachinery": {
+    "reviewed_revision": "fb6187ebe5374d5682ac0bc05f31e3639ab6fb15",
+    "copied_revision_established": false,
+    "license_url": "https://github.com/AlibabaResearch/AdvancedLiterateMachinery/blob/fb6187ebe5374d5682ac0bc05f31e3639ab6fb15/LICENSE",
+    "nested_license_url": "https://github.com/AlibabaResearch/AdvancedLiterateMachinery/blob/fb6187ebe5374d5682ac0bc05f31e3639ab6fb15/OCR/LISTER/LICENSE.md"
+  },
+  "microsoft/FocalNet": {
+    "reviewed_revision": "e8514bdcfe1eb6e7e110403e9f2972c67dfed1c3",
+    "copied_revision_established": false,
+    "license_url": "https://github.com/microsoft/FocalNet/blob/e8514bdcfe1eb6e7e110403e9f2972c67dfed1c3/LICENSE"
+  },
+  "swz30/Restormer": {
+    "reviewed_revision": "68dc6ac472db26f16361150cb7a96a1bc87da93f",
+    "copied_revision_established": false,
+    "license_url": "https://github.com/swz30/Restormer/blob/68dc6ac472db26f16361150cb7a96a1bc87da93f/LICENSE.md"
+  }
+}
