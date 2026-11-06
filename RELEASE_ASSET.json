@@ -11,8 +11,8 @@
       "size_bytes": 64267208,
       "sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
       "config": "experiments/revision_eval/submitted_model/config_snapshot.yaml",
-      "release_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0",
-      "download_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth"
+      "release_url": "https://github.com/valfride/SSViT-LRLPR/releases/tag/ema-epoch58-v1.0.0",
+      "download_url": "https://github.com/valfride/SSViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth"
     }
   ],
   "baseline_primary_other_seed_ablation_assets_included": false,

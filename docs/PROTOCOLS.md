@@ -1,6 +1,6 @@
 # Frozen scientific protocols
 
-Scientific authority: the established manuscript protocol together with original execution records. Paper `b0b0e94` is the reviewed historical snapshot, not assumed latest; final review against the new paper commit is pending. Complete identities are in `reproducibility/paper_manifest.json` and `ablation_manifest.json`. No new checkpoint selection, architecture/objective/metric change or experiment is introduced.
+Scientific authority: the established manuscript protocol together with original execution records. Active Tables 1–5 were checked against pinned paper snapshot `775a045acae01770859a4c51ea2a788dd436c5ed`; this is a displayed-value check, not full numerical reproduction or validation of later revisions. Complete identities are in `reproducibility/paper_manifest.json` and `ablation_manifest.json`. No new checkpoint selection, architecture/objective/metric change or experiment is introduced.
 
 ## Proposed model and baselines
 

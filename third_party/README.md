@@ -31,3 +31,5 @@ not an exhaustive audit of every dependency's nested notices.
 Model weights and datasets have separate permission scopes. Only the original
 proposed EMA state is authorized for release;no baseline or additional state is
 redistributed. See [MODEL_WEIGHTS.md](../docs/MODEL_WEIGHTS.md).
+
+The provenance ledger’s `sha256_at_review` values are dated review records, including bytes before later attribution headers and release documentation updates; they are not a current whole-tree integrity manifest. `reproducibility/scientific_source_hashes.json` verifies the current scientific implementation and metadata. Original copy revisions remain explicitly unestablished where the evidence does not recover them; pinned reference licenses do not establish those historical copy dates.

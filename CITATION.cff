@@ -14,6 +14,6 @@ authors:
     given-names: Rayson
   - family-names: Menotti
     given-names: David
-repository-code: "https://github.com/valfride/CNN-ViT-LRLPR"
+repository-code: "https://github.com/valfride/SSViT-LRLPR"
 abstract: "Companion implementation for the manuscript 'A CNN-ViT Framework for Recognizing Low-Resolution License Plates', currently under review."
 license: "Apache-2.0"

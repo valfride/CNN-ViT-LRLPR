@@ -1,6 +1,6 @@
 # Bidirectional paper–code mapping
 
-Previously reviewed paper snapshot (historical, not assumed latest): `valfride/CNN-ViT-LRLPR-paper@b0b0e947ae7bf30cfd5f340ba3c1f240515112b6`. The source-only candidate starts from mainc739714 and selectively copies reviewed implementation/config contents from report heada0f9844. It does not merge that history or copy its results tree.
+Reviewed manuscript snapshot: `valfride/CNN-ViT-LRLPR-paper@775a045acae01770859a4c51ea2a788dd436c5ed`. The publication candidate preserves clean public history and selectively incorporates verified source improvements from private main `ceac5f495c498fc29e467cd7f5218072fbff9997`. Historical private commit identifiers are provenance records, not a claim that those commits or their restricted evidence are publicly accessible.
 
 | Paper / reviewer response | Implementation | Original identity | Entry point / expected output |
 | --- | --- | --- | --- |
@@ -18,6 +18,6 @@ Previously reviewed paper snapshot (historical, not assumed latest): `valfride/C
 
 Full scientific identifiers are machine-readable in `paper_manifest.json`/`ablation_manifest.json`. Every supported recipe in [COMMAND_RECIPES.md](COMMAND_RECIPES.md) resolves to a table above. Per-model original papers/implementation references and adaptation gaps are in `reference/BASELINE_PROVENANCE.csv`; source transfer/differences are in `reproducibility/source_inventory.json`.
 
-Reference counts and paper displays are separate. The original selected state,configuration,cohort andprocedure define execution; missing original attribution or a printed-rounding discrepancy is reported, never repaired by changing results. Full training/latency equivalence and final publication readiness remain unverified. X3 is deferred; manuscript and response letter are untouched.
+Reference counts and paper displays are separate. The original selected state,configuration,cohort andprocedure define execution; missing original attribution or a printed-rounding discrepancy is reported, never repaired by changing results. Full training/latency equivalence remains unverified. X3 is deferred; manuscript and response letter are untouched.
 
-The author is revising the paper independently. Do not auto-update this snapshot or claim current manuscript consistency; final reconciliation will use the new paper commit after the author completes revisions. Three Table3 displays are now explicitly approved as reported references, with original arithmetic retained separately.
+The active Tables 1–5 in the pinned snapshot match all 284 displayed numeric cells. The optional combined-ablation table remains inactive. This does not certify arbitrary later manuscript revisions or methodological prose. Three Table 3 displays remain explicitly approved reported values; integer counts and direct arithmetic are preserved separately. No manuscript or response-letter source is included or modified.

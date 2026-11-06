@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "paper_commit": "b0b0e947ae7bf30cfd5f340ba3c1f240515112b6",
+  "paper_commit": "775a045acae01770859a4c51ea2a788dd436c5ed",
   "scientific_code_commits": {
     "v6": "ee6b74e2ae4409e1451e808e7067f4b8b70d3b32",
     "test_controls": "4580ed892fe6d1201235da9ee122ba7fac7e009d",
@@ -136,13 +136,14 @@
     "selection_sha256": "b2d005f909d5d3d36e13e2c9f8f4915436dc5cf302fa9e7386541a5c43050867"
   },
   "x3": "deferred; source/configuration unchanged",
-  "asset_release": "not authorized or performed",
+  "asset_release": "Existing authorized original CNN\u2013ViT EMA58 public release only; no external baseline or additional-state distribution",
   "paper_reference": {
-    "reviewed_snapshot_commit": "b0b0e947ae7bf30cfd5f340ba3c1f240515112b6",
-    "status": "historical_review_snapshot; manuscript revisions in progress",
+    "reviewed_snapshot_commit": "775a045acae01770859a4c51ea2a788dd436c5ed",
+    "status": "active Tables 1\u20135 and methodology reviewed 2026-11-05; prose discrepancies disclosed",
     "latest_commit_assumed": false,
-    "final_consistency_review": "pending user completion and identification of the new paper commit",
+    "final_consistency_review": "Tables 1\u20135 compared read-only against pinned manuscript snapshot; see docs/PAPER_TRACEABILITY.md; no manuscript edits",
     "scientific_protocol": "established frozen protocol and original execution records remain authoritative",
-    "reported_display_decision": "Three Table3 historical displays approved on 2026-11-03; see PAPER_DISPLAY_DISCLOSURES.json"
+    "reported_display_decision": "Three Table3 historical displays approved on 2026-11-03; see PAPER_DISPLAY_DISCLOSURES.json",
+    "historical_review_snapshot_commit": "b0b0e947ae7bf30cfd5f340ba3c1f240515112b6"
   }
 }

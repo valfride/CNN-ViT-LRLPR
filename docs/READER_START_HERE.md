@@ -3,7 +3,7 @@
 This clean source tree preserves the original scientific protocol. Only the proposed
 EMA epoch58 is authorized for its model release;see [MODEL_WEIGHTS.md](MODEL_WEIGHTS.md)
 for the actual upload/download verification status. Baseline and ablation weights
-are not distributed. Final manuscript synchronization remains pending.
+are not distributed. The active Tables 1–5 match the pinned `775a045` manuscript snapshot; later revisions require a new comparison.
 
 ## Understand and cite the implementation
 

@@ -75,7 +75,7 @@ python -m reproducibility.verify --references --strict-paper-display
 python -m reproducibility.verify --references --strict-direct-rounding
 ```
 
-The same switches apply to `--aggregate` for a complete Table3 result. Approval is limited to the reported reference displays; a raw evaluator percentage of80.5 in place of100*5650/7023 still fails arithmetic validation. Manuscript updates are not fetched or edited automatically. The final paper-to-code review remains pending the author-provided revised commit.
+The same switches apply to `--aggregate` for a complete Table3 result. Approval is limited to the reported reference displays; a raw evaluator percentage of80.5 in place of100*5650/7023 still fails arithmetic validation. Manuscript updates are not fetched or edited automatically. The displayed Tables 1–5 were checked against pinned manuscript `775a045`; use `python -m reproducibility.paper_audit --paper-root /path/to/authorized/paper` for that reviewed layout. No manuscript is bundled. Diagnostic `--frames` subsets remain subject to complete-table aggregate verification.
 
 ## Bounded synthetic compatibility smoke test (not table reproduction)
 

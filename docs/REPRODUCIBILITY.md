@@ -1,6 +1,6 @@
 # Reproducing the final OJITS manuscript
 
-This clean-history companion preserves the original protocol mapped from the previously reviewed paper snapshot `b0b0e94` to original artifacts. It is not assumed to be the latest paper commit. Manuscript revisions are in progress; final alignment review is pending the new commit, while the established scientific protocol remains fixed. A bounded synthetic checkpoint-loading/inference campaign is documented in [GPU_SMOKE_VALIDATION.md](GPU_SMOKE_VALIDATION.md); no training, full-cohort evaluation or efficiency benchmark was performed. Plans and aggregate verification use only the standard library.
+This clean-history companion preserves the original scientific protocol and artifact identities. Active Tables 1–5 were compared with the pinned manuscript snapshot `775a045acae01770859a4c51ea2a788dd436c5ed`; all 284 displayed numeric cells match. This is not a new numerical reproduction, a complete prose review, or certification of later manuscript revisions. A bounded synthetic checkpoint-loading/inference campaign is documented in [GPU_SMOKE_VALIDATION.md](GPU_SMOKE_VALIDATION.md); no training, full-cohort evaluation or efficiency benchmark was performed. Plans and aggregate verification use only the standard library.
 
 ## Environment
 

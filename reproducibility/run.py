@@ -17,10 +17,16 @@ EVALUATOR = ROOT / "test.py"
 BENCHMARK = ROOT / "experiments/revision_eval/reviewer1/01_efficiency/scripts/benchmark_efficiency.py"
 
 
-def plan(table, selected, validation=False):
+def plan(table, selected, validation=False, requested_frames=None):
     if validation and table != 2:
         raise ValueError("Validation evidence replay belongs only to Table2")
     frames = [1] if table == 3 else [3, 5] if table == 2 else [1, 3, 5]
+    if requested_frames is not None:
+        if table == 4 or not requested_frames or len(requested_frames) != len(set(requested_frames)):
+            raise ValueError("Frame subsets require distinct values and are unavailable for Table4")
+        if any(f not in frames for f in requested_frames):
+            raise ValueError("Frame subset is outside this table's frozen protocol")
+        frames = requested_frames
     rules = ["bayes", "average", "majority", "char_majority"] if table == 2 else ["bayes"]
     if table == 4:
         return [{"id": a["id"], "table": 4} for a in selected]
@@ -205,6 +211,8 @@ def main(argv=None):
     p.add_argument("action", choices=["plan", "preflight", "evaluate"])
     p.add_argument("--table", type=int, choices=range(1, 6), required=True)
     p.add_argument("--models", nargs="+")
+    p.add_argument("--frames", nargs="+", type=int,
+                   help="Diagnostic subset of this table's frozen frame counts; complete-table verification still requires all counts")
     p.add_argument("--weights", type=Path, help="Private JSON: model/asset id -> original checkpoint file")
     p.add_argument("--dataset", type=Path)
     p.add_argument("--output", type=Path)
@@ -216,7 +224,7 @@ def main(argv=None):
     args = p.parse_args(argv)
     try:
         selected = assets(args.table, args.models)
-        specs = plan(args.table, selected, args.validation)
+        specs = plan(args.table, selected, args.validation, args.frames)
         if args.action == "plan":
             print(json.dumps({"table": args.table, "runs": specs, "inference_executed": False}, indent=2))
             return

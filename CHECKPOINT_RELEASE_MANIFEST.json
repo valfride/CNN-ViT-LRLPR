@@ -1,23 +1,26 @@
 {
-  "schema_version": 1,
-  "status": "SINGLE_ORIGINAL_EMA_ONLY",
+  "schema_version": 2,
+  "status": "PUBLIC_PROVENANCE_CATALOG_SINGLE_ORIGINAL_EMA_RELEASE",
   "source_candidate_base": "b121869b222477f3a9384c2fd80b79baa403d854",
-  "public_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0",
+  "public_url": "https://github.com/valfride/SSViT-LRLPR/releases/tag/ema-epoch58-v1.0.0",
   "artifact_release_published": true,
   "deserialization_in_this_phase": false,
   "proposed_packages": {
-    "inference-eight-models": {
-      "logical_assets": 8,
-      "unique_states": 8,
-      "layout": "inference/{model_id}/{original_filename}",
-      "initial_public_package": "Not published;only the original CNN\u2013ViT EMA is approved"
+    "cnn-vit-ema58-only": {
+      "logical_assets": 1,
+      "unique_states": 1,
+      "asset_ids": [
+        "ours"
+      ],
+      "layout": "inference/ours/{original_filename}",
+      "initial_public_package": "Approved distribution strategy for the original model only; publishing requires a separate release action and applicable checks"
     },
     "table5-additional-states": {
       "logical_table5_assets": 18,
       "additional_unique_states": 17,
       "layout": "table5/{variant}/seed-{seed}/{weight_source}/{original_filename}",
-      "shared_state": "full-42-ghost aliases inference/ours/last.pth",
-      "initial_public_package": "Not authorized or published"
+      "shared_state": "full-42-ghost aliases ours/last.pth",
+      "initial_public_package": "excluded; potential future own-architecture release subject to separate review and authorization"
     }
   },
   "assets": [
@@ -32,9 +35,9 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
+      "package": "cnn-vit-ema58-only",
       "proposed_artifact_path": "inference/ours/last.pth",
-      "download_url": "https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth",
+      "download_url": "https://github.com/valfride/SSViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth",
       "controlled_storage": {
         "status": "PASS",
         "sha256_verified": true,
@@ -44,11 +47,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Original continued CNN\u2013ViT trajectory; predecessor/RNG lineage incomplete",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "author-confirmed for original EMA epoch58 only",
-      "permission_evidence": null,
+      "redistribution_permission": "Author confirmed permission for this exact original EMA58 checkpoint in prior release preparation",
+      "permission_evidence": "Author attestation in task history; no broader baseline or ablation permission inferred",
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": true,
-      "release_gate": "Uploaded asset digest/size independently verified;only this state released"
+      "release_gate": "Existing public asset independently downloaded and SHA256/size verified; no new upload in this candidate",
+      "distribution_role": "sole released model state"
     },
     {
       "id": "mdiff4str",
@@ -61,8 +65,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/mdiff4str/model_acc_0.6040_ep_21.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -73,11 +77,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "cppd",
@@ -90,8 +95,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/cppd/model_acc_0.6880_ep_77.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -102,11 +107,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "igtr",
@@ -119,8 +125,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/igtr/model_acc_0.6600_ep_61.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -131,11 +137,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "lister",
@@ -148,8 +155,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/lister/model_acc_0.6830_ep_113.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -160,11 +167,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "svtrv2",
@@ -177,8 +185,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/svtrv2/model_acc_0.7030_ep_156.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -189,11 +197,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "ote",
@@ -206,8 +215,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/ote/model_acc_0.7430_ep_88.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -218,11 +227,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "svtrv2_ar",
@@ -235,8 +245,8 @@
       "seed": null,
       "variant": null,
       "weight_source": null,
-      "package": "inference-eight-models",
-      "proposed_artifact_path": "inference/svtrv2_ar/student_acc_0.7500_ep_52.pth",
+      "package": null,
+      "proposed_artifact_path": null,
       "download_url": null,
       "controlled_storage": {
         "status": "PASS",
@@ -247,11 +257,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "SVTRv2-AR paper states from-scratch/no external data; no independent full training replay",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "not authorized for repository redistribution without separate approval",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "External provenance only; separate explicit authorization and applicable source/data/weight rights required before any redistribution",
+      "distribution_role": "external_baseline_provenance_only"
     },
     {
       "id": "full-42-ghost",
@@ -276,12 +287,13 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Original continued CNN\u2013ViT trajectory; predecessor/RNG lineage incomplete",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "author-confirmed for original EMA epoch58 only",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Scientific alias of approved ours hash;no separate ablation asset is authorized or uploaded",
-      "alias_of": "ours"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "alias_of": "ours",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "full-123-ghost",
@@ -306,11 +318,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "full-2026-ghost",
@@ -335,11 +348,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_restormer-42-ghost",
@@ -364,11 +378,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_restormer-123-ghost",
@@ -393,11 +408,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_restormer-2026-ghost",
@@ -422,11 +438,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_pixelshuffle-42-ghost",
@@ -451,11 +468,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_pixelshuffle-123-ghost",
@@ -480,11 +498,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_pixelshuffle-2026-ghost",
@@ -509,11 +528,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_sfb-42-ghost",
@@ -538,11 +558,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_sfb-123-ghost",
@@ -567,11 +588,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "no_sfb-2026-ghost",
@@ -596,11 +618,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "linear_head-42-ghost",
@@ -625,11 +648,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "linear_head-123-ghost",
@@ -654,11 +678,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "linear_head-2026-ghost",
@@ -683,11 +708,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "full-42-student",
@@ -712,11 +738,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Original continued CNN\u2013ViT trajectory; predecessor/RNG lineage incomplete",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "full-123-student",
@@ -741,11 +768,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     },
     {
       "id": "full-2026-student",
@@ -770,11 +798,12 @@
       "training_data": "Original LRLPR-26 training split (19000 tracks); validation-selected against separate1000-track holdout; manuscript/config evidence, no dataset redistributed",
       "initialization_provenance": "Frozen local configuration and selected state; complete startup/RNG lineage not independently reconstructed",
       "external_pretraining": "No extra provenance attestation inferred from filenames or source license",
-      "redistribution_permission": "not authorized for this repository",
+      "redistribution_permission": "requires clarification",
       "permission_evidence": null,
       "binary_metadata_review": "Bounded safe ZIP/pickle-opcode screen, no deserialization; not a complete privacy/security clearance",
       "public_package_authorized": false,
-      "release_gate": "Excluded from publication;identity retained solely for scientific traceability"
+      "release_gate": "Excluded from initial package; separate state-specific permission review and explicit release authorization required",
+      "distribution_role": "own_architecture_optional_future_only"
     }
   ],
   "existing_release_metadata_check": {
@@ -788,12 +817,11 @@
     "other_models_available_in_release": false,
     "redistribution_permission_inferred": false
   },
-  "publication_scope": {
-    "unique_states": 1,
-    "approved_asset_name": "ema_weights.pth",
-    "original_filename": "last.pth",
-    "sha256": "1a7a640dafc368a8dda9ed6a18239b2d54a1f39e9aa0b581a5a405ec0697b11a",
-    "bytes": 64267208,
-    "baseline_or_additional_states_authorized": false
+  "distribution_policy": {
+    "initial_package": "Only the team-approved original CNN\u2013ViT EMA epoch-58 state (ours); no upload authorized by this PR",
+    "external_baselines": "Provenance only. Do not redistribute without separate explicit authorization and applicable rights. Obtain exact originals externally through lawful access; generic official pretrained weights are not interchangeable.",
+    "table5": "Own-architecture states cataloged separately for potential future review; excluded from the initial package. No automatic release.",
+    "identity_is_not_permission": true,
+    "private_merge_requires_public_release_permission": false
   }
 }

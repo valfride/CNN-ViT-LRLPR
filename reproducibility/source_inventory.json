@@ -261,5 +261,18 @@
       "identical": true,
       "change": null
     }
-  ]
+  ],
+  "publication_update": {
+    "public_history_base": "af33339ca9e853e02c24f3cc8ababd9a94c4a00d",
+    "reviewed_private_source": "ceac5f495c498fc29e467cd7f5218072fbff9997",
+    "source_only_imports": [
+      "reproducibility/run.py",
+      "reproducibility/paper_audit.py",
+      "reproducibility/test_consolidation.py",
+      ".github/workflows/cpu-reproducibility.yml"
+    ],
+    "private_git_ancestry_imported": false,
+    "model_license_headers": "existing public notices retained; model executable AST unchanged",
+    "historical_transfer_records": "retained as historical evidence; current scientific digests are in scientific_source_hashes.json"
+  }
 }

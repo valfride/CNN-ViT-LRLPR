@@ -1,6 +1,6 @@
 # Working paper reference and approved display policy
 
-The manuscript is being revised by the author in its own Git repository. This reproducibility branch does not edit the manuscript/response letter, fetch revisions to relabel them as validated, or assume the previously reviewed `b0b0e94` snapshot is latest. Its manifest retains that commit as historical provenance and marks final consistency review pending. The next final review will use the revised paper commit identified by the author after revisions are complete.
+The manuscript remains in its separate private repository. The manifest pins `775a045acae01770859a4c51ea2a788dd436c5ed`: active Tables 1–5 were compared read-only with frozen references and all 284 numeric display cells match. Historical `b0b0e94` remains provenance. No manuscript or response-letter files are bundled or edited; future revisions require a fresh explicit comparison. This verifies the supported table layout, not experimental reproduction or arbitrary methodological prose.
 
 The established scientific protocol and frozen original execution records remain fixed: CE/AdamW/ReduceLROnPlateau/patience60/EMA warmup5 and original EMA58 for CNN–ViT; all original baseline files/configs including LISTER113 and SVTRv2 156; original splits, preprocessing, native decoding, metrics and results. X3 remains deferred.
 

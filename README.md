@@ -1,4 +1,4 @@
-# CNN-ViT-LRLPR
+# SSViT-LRLPR — CNN–ViT official research implementation
 
 Companion implementation for **“A CNN-ViT Framework for Recognizing Low-Resolution
 License Plates”**, an OJITS manuscript under review. The proposed model combines a
@@ -8,7 +8,7 @@ upsampling and a fixed-length cross-attention recognizer.
 This clean repository preserves the validated model implementations, frozen
 configurations and evaluation protocols. Model usability was checked against the
 original checkpoints; full numerical experiments were not repeated for release.
-The manuscript is still being revised; final paper/code synchronization is pending.
+Tables 1–5 were compared read-only against manuscript snapshot `775a045acae01770859a4c51ea2a788dd436c5ed`. This check covers displayed values, not a new experiment or complete prose review.
 
 ## Setup
 
@@ -20,7 +20,7 @@ python -m pip install -c requirements/constraints-paper-py39.txt \
   torch==2.6.0+cu124 torchvision==0.21.0+cu124 \
   --index-url https://download.pytorch.org/whl/cu124
 python -m pip install -c requirements/constraints-paper-py39.txt -r requirements.txt
-python -m unittest reproducibility.test_protocol reproducibility.test_smoke reproducibility.test_release reproducibility.test_infer -v
+python -m unittest reproducibility.test_protocol reproducibility.test_smoke reproducibility.test_release reproducibility.test_consolidation reproducibility.test_infer -v
 ```
 
 The constraints describe the working scientific environment; a fully independent
@@ -36,14 +36,14 @@ paper-evaluation filename is `last.pth`. They identify the same immutable bytes:
 - Size: **64,267,208 bytes**
 - Configuration: [original CE snapshot](experiments/revision_eval/submitted_model/config_snapshot.yaml)
 
-[Download the original EMA checkpoint](https://github.com/valfride/CNN-ViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth) from the
-[single-model release](https://github.com/valfride/CNN-ViT-LRLPR/releases/tag/ema-epoch58-v1.0.0). The uploaded asset was independently downloaded
+[Download the original EMA checkpoint](https://github.com/valfride/SSViT-LRLPR/releases/download/ema-epoch58-v1.0.0/ema_weights.pth) from the
+[single-model release](https://github.com/valfride/SSViT-LRLPR/releases/tag/ema-epoch58-v1.0.0). The uploaded asset was independently downloaded
 and verified against the exact digest and byte size above.
 [Weight access and mapping](docs/MODEL_WEIGHTS.md) distinguish distribution
 authorization from the source-code license.
 
 The example below passed strict loading/native decoding with finite `[1,7,38]`
-CPU FP32 scores using the original EMA. All32CPU regression tests pass.
+CPU FP32 scores using the original EMA. The candidate includes the 32 consolidated CPU checks and three single-image interface checks.
 After obtaining the original file, verify it locally and run a bounded synthetic
 single-image example. CPU FP32 is explicit here; this does not reproduce CUDA FP16
 paper metrics. The checkpoint remains outside the checkout:

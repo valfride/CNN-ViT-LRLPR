@@ -1,0 +1,32 @@
+name: CPU reproducibility checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  protocol:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.9', '3.12']
+    env:
+      CUDA_VISIBLE_DEVICES: ''
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - name: Standard-library protocol and negative tests
+        run: python -m unittest reproducibility.test_protocol reproducibility.test_smoke reproducibility.test_release reproducibility.test_consolidation reproducibility.test_infer -v
+      - name: Frozen source and reference identities
+        run: |
+          python -c 'from reproducibility.common import check_sources; check_sources()'
+          python -m reproducibility.verify --references --strict-paper-display
+      - name: Validate all table plans without inference
+        run: |
+          for table in 1 2 3 4 5; do
+            python -m reproducibility.run plan --table "$table"
+          done
